@@ -10,7 +10,6 @@ namespace TestApp.Pages
         public string? ExactChangeMessage { set; get; } = null;
         public List<float> Coins { get; set; } = new List<float>();
         public float Total { get; set; }
-        
         public List<Product> Products { get; set; } = new List<Product>();
         public bool ExactChange { get; set; } = false;
         protected override async Task OnInitializedAsync()
@@ -70,7 +69,6 @@ namespace TestApp.Pages
             Thread.Sleep(2000);
             Total = 0;
             DisplayMessage = "INSERT COIN";
-            ChangeMessage = null;
         }
     }
 }
